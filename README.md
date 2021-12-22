@@ -1,6 +1,7 @@
-##TWGroup - hiring
+# TWGroup - hiring
 
-###Desafio 1
+### Desafio 1
+
 Visualiza las siguientes estructuras de tablas.
 
 Invoice (id, date, user_id, seller_id, type)
@@ -53,7 +54,7 @@ Product::all()->map(function ($prod) {
 })->filter(); // Filter permite eliminar todos los nulls de la colección
 ```
 
-###Desafio 2
+### Desafio 2
 Indica paso a paso los comandos para una instalación básica de Laravel que me permita ver la página principal (recuerda describir qué hace cada comando).
 Existen diferentes formas de generar un proyecto nuevo ya sea con
 ```shell
@@ -80,7 +81,7 @@ Existen diferentes formas de generar un proyecto nuevo ya sea con
     # con un archivo server.php que ya te redirige hacia public. 
 ```
 
-###Desafio 3
+### Desafio 3
 Respecto a la estructura de datos del desafío 1, agrega a "Invoice" un campo "total" y escribe un Observador (Observer) en el que cada vez que se inserter un registro en la tabla "Product", aumente el valor de "total" de la tabla "Invoice".
 ```shell
   # Generamos el observer enlazado al modelo Product
@@ -103,7 +104,7 @@ Respecto a la estructura de datos del desafío 1, agrega a "Invoice" un campo "t
     Product::observe(ProductObserver::class);
 ```
 
-###Desafio 4
+### Desafio 4
 Explícanos ¿qué es "Laravel Jetstream"? y ¿qué permite "Livewire" a los programadores?
 ```shell
     # Jetstream es un kit de inicio lanzado para Laravel desde la versión 8 que no viene instalado por defecto
@@ -119,7 +120,7 @@ Explícanos ¿qué es "Laravel Jetstream"? y ¿qué permite "Livewire" a los pro
     # permite actualizar las variables sin recargar la pagina completa, ya que solo actualiza el componente
 ```
 
-###Desafio 5 
+### Desafio 5
 Manos al código! basado en las siguientes tablas, construye un pequeño software:
 
 
